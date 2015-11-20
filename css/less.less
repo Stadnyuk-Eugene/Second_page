@@ -1,5 +1,233 @@
-@width: 800px;
-
+@font-face{
+	font-family: 'Dosis-Bold';
+	src: url('../fonts/Dosis-Bold.otf');
+}
+@font-face{
+	font-family: 'Dosis-Regular';
+	src: url('../fonts/Dosis-Regular.otf');
+}
+@font-face{
+	font-family: 'Dosis-Light';
+	src: url('../fonts/Dosis-Light.otf');
+}
+body{
+	margin-top: -20px;
+}
 header, nav, section, footer{
-	width: @width;
-} 
+	margin: 0 auto;
+	width: 800px;
+	height: 400px;	
+	font-family: 'Dosis-Bold';
+}
+header{
+	background: -webkit-linear-gradient(top, #A1D7E3 0%, #E6F4FB 100%);
+	font-family: 'Dosis-Bold';
+	h1{
+		position: relative;
+		top: 50px;
+		left: 45px;
+		color: #225A69;
+	}
+	h2{
+		position: relative;
+		top: 30px;
+		left: 45px;
+		color: #407D24;
+	}
+	.container{
+		margin: 0;
+		padding: 0;
+		width: 800px;
+		height: 400px;
+		background-image: url(../pictures/header.svg);
+		.balloon{
+			display: block;
+			position: relative;
+			top: 10px;
+			left: 400px;
+			width: 50px;
+			height: 84px;
+			background: url(../pictures/balloon.svg);
+		}
+		.contacts{
+			display: flex;
+			position: relative;
+			top: -170px;
+			left: 700px;
+			width: 100px;
+			height: 50px;
+			//background: #000;
+			.home{
+				margin-right: 5px;
+				width: 21px;
+				height: 18px;
+				.column{
+					position: relative;
+					width: 21px;
+					height: 18px;
+					&1{
+						background: url(../pictures/home/column1.svg);
+					}
+					&2{
+						top: -18px;
+						background: url(../pictures/home/column2.svg);
+					}
+					&3{
+						top: -36px;
+						background: url(../pictures/home/column3.svg);
+					}
+				}
+			}
+			.message{
+				margin-right: 5px;
+				width: 17px;
+				height: 18px;
+				background: url(../pictures/message/message.svg);
+			}
+			.chat{
+				width: 23px;
+				height: 18px;
+				.column{
+					position: relative;
+					width: 23px;
+					height: 18px;
+					&1{
+						background: url(../pictures/chat/chat-icon1.svg);
+					}
+					&2{
+						top: -18px;
+						background: url(../pictures/chat/chat-icon2.svg);
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 10px;
+	height: 65px;
+	background: #225A69;
+	font-family: 'Dosis-Bold';
+	color: #7DB5C4;
+	.nav{
+		display: flex;
+		h2{
+			font-size: 1em;
+		}
+		&1{
+			margin-left: 50px;
+		}
+		&4{
+			margin-right: 50px;
+		}
+		.picture{
+			transition: all 0.5s;
+			width: 37px;
+			height: 31px;
+			background: url(../pictures/picture1.svg) no-repeat; 
+			&2{
+				background: url(../pictures/picture2.svg) no-repeat;
+			}
+			&3{
+				background: url(../pictures/picture3.svg) no-repeat;
+			}
+			&4{
+				margin-right: 10px;
+				background: url(../pictures/picture4.svg) no-repeat;
+			}
+			&:hover{
+				transform: rotateY(180deg);
+			}
+		}
+	}
+	
+}
+
+section, footer{
+	height: 250px;
+	background: #5BA339;
+}
+section{
+	display: flex;
+	justify-content: space-between;
+	.section{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 45px;
+		&1{
+			margin-left: 85px;
+		}	
+		&4{
+			margin-right: 85px;
+		}
+		.icon{
+			width: 100px;
+			height: 100px;
+			background: #fff url(../pictures/section-icon1.svg) no-repeat;
+			//background-size: cover; 
+			border-radius: 20px;
+			&-section2{
+				background-image: url(../pictures/section-icon2.svg);
+				background-size: 70%;
+				background-position: 50% 50%;
+			}
+			&-section3{
+				background-image: url(../pictures/section-icon3.svg);
+				background-position:  15px 2px;
+			}
+			&-section4{
+				background-image: url(../pictures/section-icon4.svg);
+				background-size: 70%;
+				background-position: 50% 50%;
+			}
+		}
+		p{
+			margin-top: 15px;
+			font-family: 'Dosis-Bold';
+			color: #fff;
+		}
+		a{
+			display: block;
+			margin-top: -10px;
+			width: 78px;
+			height: 18px;
+			background: #98CE3C;
+			border: 1px solid #98CE3C;
+			border-radius: 5px;
+			text-align: center;
+			text-decoration: none;
+			font-size: 12px;
+			color: #fff;
+			transition: 0.5s;
+			&:hover{
+				background: #fff;
+				color: #98CE3C;
+			}
+		}
+	}
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px; 
+	height: 70px;
+	color: #98CE3C;
+	font-size: 1.3em;
+	text-shadow: 0 0 2px #000;
+	.logo{
+		margin-left: 5px;
+		margin-right: 5px;
+		width: 24px;
+		height: 21px;
+		background: url(../pictures/logo.svg);
+	}
+}

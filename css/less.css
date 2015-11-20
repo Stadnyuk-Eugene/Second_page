@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'Dosis-Bold';
+  src: url('../fonts/Dosis-Bold.otf');
+}
+@font-face {
+  font-family: 'Dosis-Regular';
+  src: url('../fonts/Dosis-Regular.otf');
+}
+@font-face {
+  font-family: 'Dosis-Light';
+  src: url('../fonts/Dosis-Light.otf');
+}
+body {
+  margin-top: -20px;
+}
+header,
+nav,
+section,
+footer {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  font-family: 'Dosis-Bold';
+}
+header {
+  background: -webkit-linear-gradient(top, #a1d7e3 0%, #e6f4fb 100%);
+  font-family: 'Dosis-Bold';
+}
+header h1 {
+  position: relative;
+  top: 50px;
+  left: 45px;
+  color: #225A69;
+}
+header h2 {
+  position: relative;
+  top: 30px;
+  left: 45px;
+  color: #407D24;
+}
+header .container {
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 400px;
+  background-image: url(../pictures/header.svg);
+}
+header .container .balloon {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 400px;
+  width: 50px;
+  height: 84px;
+  background: url(../pictures/balloon.svg);
+}
+header .container .contacts {
+  display: flex;
+  position: relative;
+  top: -170px;
+  left: 700px;
+  width: 100px;
+  height: 50px;
+}
+header .container .contacts .home {
+  margin-right: 5px;
+  width: 21px;
+  height: 18px;
+}
+header .container .contacts .home .column {
+  position: relative;
+  width: 21px;
+  height: 18px;
+}
+header .container .contacts .home .column1 {
+  background: url(../pictures/home/column1.svg);
+}
+header .container .contacts .home .column2 {
+  top: -18px;
+  background: url(../pictures/home/column2.svg);
+}
+header .container .contacts .home .column3 {
+  top: -36px;
+  background: url(../pictures/home/column3.svg);
+}
+header .container .contacts .message {
+  margin-right: 5px;
+  width: 17px;
+  height: 18px;
+  background: url(../pictures/message/message.svg);
+}
+header .container .contacts .chat {
+  width: 23px;
+  height: 18px;
+}
+header .container .contacts .chat .column {
+  position: relative;
+  width: 23px;
+  height: 18px;
+}
+header .container .contacts .chat .column1 {
+  background: url(../pictures/chat/chat-icon1.svg);
+}
+header .container .contacts .chat .column2 {
+  top: -18px;
+  background: url(../pictures/chat/chat-icon2.svg);
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  height: 65px;
+  background: #225A69;
+  font-family: 'Dosis-Bold';
+  color: #7DB5C4;
+}
+nav .nav {
+  display: flex;
+}
+nav .nav h2 {
+  font-size: 1em;
+}
+nav .nav1 {
+  margin-left: 50px;
+}
+nav .nav4 {
+  margin-right: 50px;
+}
+nav .nav .picture {
+  transition: all 0.5s;
+  width: 37px;
+  height: 31px;
+  background: url(../pictures/picture1.svg) no-repeat;
+}
+nav .nav .picture2 {
+  background: url(../pictures/picture2.svg) no-repeat;
+}
+nav .nav .picture3 {
+  background: url(../pictures/picture3.svg) no-repeat;
+}
+nav .nav .picture4 {
+  margin-right: 10px;
+  background: url(../pictures/picture4.svg) no-repeat;
+}
+nav .nav .picture:hover {
+  transform: rotateY(180deg);
+}
+section,
+footer {
+  height: 250px;
+  background: #5BA339;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+}
+section .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+section .section1 {
+  margin-left: 85px;
+}
+section .section4 {
+  margin-right: 85px;
+}
+section .section .icon {
+  width: 100px;
+  height: 100px;
+  background: #ffffff url(../pictures/section-icon1.svg) no-repeat;
+  border-radius: 20px;
+}
+section .section .icon-section2 {
+  background-image: url(../pictures/section-icon2.svg);
+  background-size: 70%;
+  background-position: 50% 50%;
+}
+section .section .icon-section3 {
+  background-image: url(../pictures/section-icon3.svg);
+  background-position: 15px 2px;
+}
+section .section .icon-section4 {
+  background-image: url(../pictures/section-icon4.svg);
+  background-size: 70%;
+  background-position: 50% 50%;
+}
+section .section p {
+  margin-top: 15px;
+  font-family: 'Dosis-Bold';
+  color: #fff;
+}
+section .section a {
+  display: block;
+  margin-top: -10px;
+  width: 78px;
+  height: 18px;
+  background: #98CE3C;
+  border: 1px solid #98CE3C;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff;
+  transition: 0.5s;
+}
+section .section a:hover {
+  background: #fff;
+  color: #98CE3C;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  height: 70px;
+  color: #98CE3C;
+  font-size: 1.3em;
+  text-shadow: 0 0 2px #000;
+}
+footer .logo {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 24px;
+  height: 21px;
+  background: url(../pictures/logo.svg);
+}
