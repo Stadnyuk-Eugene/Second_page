@@ -61,20 +61,31 @@ header{
 				margin-right: 5px;
 				width: 21px;
 				height: 18px;
+				cursor: pointer;
 				.column{
 					position: relative;
 					width: 21px;
 					height: 18px;
 					&1{
 						background: url(../pictures/home/column1.svg);
+						.active{
+							background: none;
+						}
 					}
 					&2{
 						top: -18px;
 						background: url(../pictures/home/column2.svg);
+						transition: 0.4s;
+						.active{
+							transform: rotateX(180deg);
+						}
 					}
 					&3{
 						top: -36px;
 						background: url(../pictures/home/column3.svg);
+						.active{
+							width: 0;
+						}
 					}
 				}
 			}
@@ -82,21 +93,57 @@ header{
 				margin-right: 5px;
 				width: 17px;
 				height: 18px;
-				background: url(../pictures/message/message.svg);
+				cursor: pointer;
+				.column{
+					position: relative;
+					width: 17px;
+					height: 18px;
+					&1{
+						background: url(../pictures/message/message-icon1.svg);
+						transition: 0.4s;
+						.active{
+							transform-origin: 0 44%;
+							transform: rotateX(180deg) translateY(3px); 
+						}
+					}
+					&2{
+						top: -18px;
+						background: url(../pictures/message/message-icon2.svg);
+						.active{
+							width: 0;
+						}
+					}
+					&3{
+						top: -36px;
+						background: url(../pictures/message/message-icon3.svg);
+						transition: 0.4s;
+						.active{
+							transform: translateY(-3px);
+						}
+					}
+				}
 			}
 			.chat{
 				width: 23px;
 				height: 18px;
+				cursor: pointer;
 				.column{
 					position: relative;
 					width: 23px;
 					height: 18px;
 					&1{
 						background: url(../pictures/chat/chat-icon1.svg);
+						transition: 0.4s;
+						.active{
+							transform: scale(1.3) translate(-5px, 3px);
+						}
 					}
 					&2{
 						top: -18px;
 						background: url(../pictures/chat/chat-icon2.svg);
+						.active{
+							background: none;
+						}
 					}
 				}
 			}

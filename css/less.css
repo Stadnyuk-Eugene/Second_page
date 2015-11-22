@@ -66,6 +66,7 @@ header .container .contacts .home {
   margin-right: 5px;
   width: 21px;
   height: 18px;
+  cursor: pointer;
 }
 header .container .contacts .home .column {
   position: relative;
@@ -75,23 +76,62 @@ header .container .contacts .home .column {
 header .container .contacts .home .column1 {
   background: url(../pictures/home/column1.svg);
 }
+header .container .contacts .home .column1.active {
+  background: none;
+}
 header .container .contacts .home .column2 {
   top: -18px;
   background: url(../pictures/home/column2.svg);
+  transition: 0.4s;
+}
+header .container .contacts .home .column2.active {
+  transform: rotateX(180deg);
 }
 header .container .contacts .home .column3 {
   top: -36px;
   background: url(../pictures/home/column3.svg);
 }
+header .container .contacts .home .column3.active {
+  width: 0;
+}
 header .container .contacts .message {
   margin-right: 5px;
   width: 17px;
   height: 18px;
-  background: url(../pictures/message/message.svg);
+  cursor: pointer;
+}
+header .container .contacts .message .column {
+  position: relative;
+  width: 17px;
+  height: 18px;
+}
+header .container .contacts .message .column1 {
+  background: url(../pictures/message/message-icon1.svg);
+  transition: 0.4s;
+}
+header .container .contacts .message .column1.active {
+  transform-origin: 0 44%;
+  transform: rotateX(180deg) translateY(3px);
+}
+header .container .contacts .message .column2 {
+  top: -18px;
+  background: url(../pictures/message/message-icon2.svg);
+}
+header .container .contacts .message .column2.active {
+  width: 0;
+}
+header .container .contacts .message .column3 {
+  top: -36px;
+  background: url(../pictures/message/message-icon3.svg);
+  transition: 0.4s;
+}
+header .container .contacts .message .column3.active {
+  transform: translateY(-3px);
 }
 header .container .contacts .chat {
   width: 23px;
   height: 18px;
+  cursor: pointer;
 }
 header .container .contacts .chat .column {
   position: relative;
@@ -100,10 +140,17 @@ header .container .contacts .chat .column {
 }
 header .container .contacts .chat .column1 {
   background: url(../pictures/chat/chat-icon1.svg);
+  transition: 0.4s;
+}
+header .container .contacts .chat .column1.active {
+  transform: scale(1.3) translate(-5px, 3px);
 }
 header .container .contacts .chat .column2 {
   top: -18px;
   background: url(../pictures/chat/chat-icon2.svg);
+}
+header .container .contacts .chat .column2.active {
+  background: none;
 }
 nav {
   display: flex;
