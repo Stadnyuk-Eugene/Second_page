@@ -10,6 +10,52 @@
 	font-family: 'Dosis-Light';
 	src: url('../fonts/Dosis-Light.otf');
 }
+@keyframes balloon{
+	0%{
+		top: 10px;
+		left: 400px;
+	}
+	10%{
+		top: 20px;
+		left: 325px;
+	}
+	20%{
+		top: 40px;
+		left: 250px;
+	}
+	30%{
+		top:20px;
+		left: 175px;
+	}
+	40%{
+		top: 0;
+		left: 250px;
+	}
+	50%{
+		top: -10px;
+		left: 325px;
+	}
+	60%{
+		top: -20px;
+	 	left: 400px;
+	}
+	70%{
+		left: 475px;
+		top: 0;
+	}
+	80%{
+	 	left: 550px;
+	 	top: 20px;
+	}
+	90%{
+		left: 475px;
+		top: 30px;
+	}
+	100%{
+	 	top: 10px;
+	 	left: 400px;
+	}
+}
 body{
 	margin-top: -20px;
 }
@@ -48,6 +94,8 @@ header{
 			width: 50px;
 			height: 84px;
 			background: url(../pictures/balloon.svg);
+			animation: linear balloon 15s infinite;
+			transition: all 1s ease 0s;
 		}
 		.contacts{
 			display: flex;
@@ -68,25 +116,25 @@ header{
 					height: 18px;
 					&1{
 						background: url(../pictures/home/column1.svg);
-						.active{
-							background: none;
-						}
 					}
 					&2{
 						top: -18px;
 						background: url(../pictures/home/column2.svg);
 						transition: 0.4s;
-						.active{
-							transform: rotateX(180deg);
-						}
 					}
 					&3{
 						top: -36px;
 						background: url(../pictures/home/column3.svg);
-						.active{
-							width: 0;
-						}
 					}
+				}
+				.column1.active{
+					background: none;
+				}
+				.column2.active{
+					transform: rotateX(180deg);
+				}
+				.column3.active{
+					width: 0;
 				}
 			}
 			.message{
@@ -101,26 +149,26 @@ header{
 					&1{
 						background: url(../pictures/message/message-icon1.svg);
 						transition: 0.4s;
-						.active{
-							transform-origin: 0 44%;
-							transform: rotateX(180deg) translateY(3px); 
-						}
 					}
 					&2{
 						top: -18px;
 						background: url(../pictures/message/message-icon2.svg);
-						.active{
-							width: 0;
-						}
 					}
 					&3{
 						top: -36px;
 						background: url(../pictures/message/message-icon3.svg);
 						transition: 0.4s;
-						.active{
-							transform: translateY(-3px);
-						}
 					}
+				}
+				.column1.active{
+					transform-origin: 0 44%;
+					transform: rotateX(180deg) translateY(3px);
+				}
+				.column2.active{
+					width: 0;
+				}
+				.column3.active{
+					transform: translateY(-3px);
 				}
 			}
 			.chat{
@@ -134,17 +182,17 @@ header{
 					&1{
 						background: url(../pictures/chat/chat-icon1.svg);
 						transition: 0.4s;
-						.active{
-							transform: scale(1.2) translate(-5px, 3px);
-						}
 					}
 					&2{
 						top: -18px;
 						background: url(../pictures/chat/chat-icon2.svg);
-						.active{
-							background: none;
-						}
 					}
+				}
+				.column1.active{
+					transform: scale(1.2) translate(-5px, 3px);
+				}
+				.column2.active{
+					background: none;
 				}
 			}
 		}
