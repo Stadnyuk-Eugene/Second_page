@@ -56,6 +56,9 @@
     left: 400px;
   }
 }
+* {
+  transition: all 0.4s;
+}
 body {
   margin-top: -20px;
 }
@@ -123,6 +126,7 @@ header .container .contacts .home .column {
 }
 header .container .contacts .home .column1 {
   background: url(../pictures/home/column1.svg);
+  transition: 0s;
 }
 header .container .contacts .home .column2 {
   top: -18px;
@@ -132,6 +136,7 @@ header .container .contacts .home .column2 {
 header .container .contacts .home .column3 {
   top: -36px;
   background: url(../pictures/home/column3.svg);
+  transition: 0s;
 }
 header .container .contacts .home .column1.active {
   background: none;
@@ -160,6 +165,7 @@ header .container .contacts .message .column1 {
 header .container .contacts .message .column2 {
   top: -18px;
   background: url(../pictures/message/message-icon2.svg);
+  transition: 0s;
 }
 header .container .contacts .message .column3 {
   top: -36px;
@@ -193,6 +199,7 @@ header .container .contacts .chat .column1 {
 header .container .contacts .chat .column2 {
   top: -18px;
   background: url(../pictures/chat/chat-icon2.svg);
+  transition: 0s;
 }
 header .container .contacts .chat .column1.active {
   transform: scale(1.2) translate(-5px, 3px);

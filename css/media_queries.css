@@ -1,14 +1,102 @@
-@media screen and (min-width: 960px){
-	header .container .balloon{
-		top: 10px;
-		left: 400px;
-		transition: 0.4s;
+@media screen and (max-width: 960px)  {
+	header, nav, section, footer{
+		width: 100%;
+		overflow: hidden; 
+	}
+	header .container .contacts{
+		position: absolute;
+		top: 0;
+		left: 75%;
+		//margin-left: 100%;
+		margin-right: 300px;
+		margin-top: 50px;
 	}
 }
-@media screen and (max-width: 960px) and (min-width: 650px){
+@media screen and (max-width: 650px) and (min-width: 318px){
+	header, nav, section, footer{
+		width: 100%; 
+		overflow: hidden; 
+	}
+	header{ 
+		height: 300px;
+	}
+	header .container{
+		margin: 0 auto;
+		width: 558px;
+
+	}
+	header h1{
+		width: 160px;
+		top: 5px;
+		left: 10px;
+	}
+	header h2{
+		width: 150px;
+		top: -20px;
+		left: 10px;
+	}
+	header .container .contacts{
+		top: -20px;
+		width: 10px;
+	}  
 	header .container .balloon{
-		left: 300px;
-		top: 50px;
-		transition: 0.4s;
+		width: 30px;
+		height: 50px;
+		animation: none;
+		top: -40px;
+		left: 250px;
+	}
+	nav{
+		padding: 5px 0; 
+		height: 60px;
+	}
+	nav .nav1{
+		margin-left: 5px;
+	}
+	nav .nav4{
+		margin-right: 5px;
+	}
+	nav .nav h2{
+		font-size: 0.7em;
+		text-align: center;
+	}
+	nav .nav .picture{
+		margin-right: 0;
+		margin-top: 5px;
+	}
+	nav .nav .picture4{
+		margin-right: 5px;
+	}
+	section{
+		//display: block;
+		justify-content: space-around;
+		height: 150px;
+		overflow: hidden;
+	}
+	section .section{
+		//display: inline-block;
+		margin-top: 10px;
+		margin-right: 5px;
+		width: 68px;
+	}
+	section .section1{
+		margin-left: 0;
+	}
+	section .section .icon {
+		width: 68px;
+		height: 68px;
+	}
+
+	section .section p{
+		margin-top: 5px;
+		text-align: center;
+	}
+	section .section a{
+		width: 70px;
+		margin-top: -15px;
+	}
+	footer{
+		height: 30px;
+		margin-bottom: 0;
 	}
 }

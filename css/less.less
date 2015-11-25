@@ -11,50 +11,20 @@
 	src: url('../fonts/Dosis-Light.otf');
 }
 @keyframes balloon{
-	0%{
-		top: 10px;
-		left: 400px;
-	}
-	10%{
-		top: 20px;
-		left: 325px;
-	}
-	20%{
-		top: 40px;
-		left: 250px;
-	}
-	30%{
-		top:20px;
-		left: 175px;
-	}
-	40%{
-		top: 0;
-		left: 250px;
-	}
-	50%{
-		top: -10px;
-		left: 325px;
-	}
-	60%{
-		top: -20px;
-	 	left: 400px;
-	}
-	70%{
-		left: 475px;
-		top: 0;
-	}
-	80%{
-	 	left: 550px;
-	 	top: 20px;
-	}
-	90%{
-		left: 475px;
-		top: 30px;
-	}
-	100%{
-	 	top: 10px;
-	 	left: 400px;
-	}
+	0%{top: 10px;left: 400px;}
+	10%{top: 20px;left: 325px;}
+	20%{top: 40px;left: 250px;}
+	30%{top:20px;left: 175px;}
+	40%{top: 0;left: 250px;}
+	50%{top: -10px;left: 325px;}
+	60%{top: -20px;left: 400px;}
+	70%{left: 475px;top: 0;}
+	80%{left: 550px;top: 20px;}
+	90%{left: 475px;top: 30px;}
+	100%{top: 10px;left: 400px;}
+}
+*{
+	transition: all 0.4s;
 }
 body{
 	margin-top: -20px;
@@ -116,6 +86,7 @@ header{
 					height: 18px;
 					&1{
 						background: url(../pictures/home/column1.svg);
+						transition: 0s;
 					}
 					&2{
 						top: -18px;
@@ -125,6 +96,7 @@ header{
 					&3{
 						top: -36px;
 						background: url(../pictures/home/column3.svg);
+						transition: 0s;
 					}
 				}
 				.column1.active{
@@ -153,6 +125,7 @@ header{
 					&2{
 						top: -18px;
 						background: url(../pictures/message/message-icon2.svg);
+						transition: 0s;
 					}
 					&3{
 						top: -36px;
@@ -186,6 +159,7 @@ header{
 					&2{
 						top: -18px;
 						background: url(../pictures/chat/chat-icon2.svg);
+						transition: 0s;
 					}
 				}
 				.column1.active{
