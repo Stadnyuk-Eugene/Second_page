@@ -72,6 +72,8 @@ footer {
   font-family: 'Dosis-Bold';
 }
 header {
+  background: -ms-linear-gradient(top, #a1d7e3 0%, #e6f4fb 100%);
+  background: -moz-linear-gradient(top, #a1d7e3 0%, #e6f4fb 100%);
   background: -webkit-linear-gradient(top, #a1d7e3 0%, #e6f4fb 100%);
   font-family: 'Dosis-Bold';
 }
@@ -208,6 +210,10 @@ header .container .contacts .chat .column2.active {
   background: none;
 }
 nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
   align-items: center;

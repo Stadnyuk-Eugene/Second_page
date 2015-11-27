@@ -36,6 +36,8 @@ header, nav, section, footer{
 	font-family: 'Dosis-Bold';
 }
 header{
+	background: -ms-linear-gradient(top, #A1D7E3 0%, #E6F4FB 100%);
+	background: -moz-linear-gradient(top, #A1D7E3 0%, #E6F4FB 100%);
 	background: -webkit-linear-gradient(top, #A1D7E3 0%, #E6F4FB 100%);
 	font-family: 'Dosis-Bold';
 	h1{
@@ -176,7 +178,12 @@ header{
 
 
 nav{
+	display: -webkit-box;
+  	display: -moz-box;
+ 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+
 	justify-content: space-around;
 	align-items: center;
 	padding-top: 10px;
@@ -249,7 +256,8 @@ section{
 			}
 			&-section3{
 				background-image: url(../pictures/section-icon3.svg);
-				background-position:  15px 2px;
+				background-position: 15px 2px;
+				
 			}
 			&-section4{
 				background-image: url(../pictures/section-icon4.svg);
